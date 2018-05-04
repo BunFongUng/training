@@ -1,8 +1,10 @@
 import Categories from '../models/Categories';
+import _ from 'lodash';
 
 export const index = async (req, res) => {
   let categories = await Categories.find();
-  console.log('categories log:::', categories);
+  // let menus = _.pick(...categories, ['id', 'name']);
+  console.log('categories log:::', ...categories);
   res.layout(
     'layout',
     {
