@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        <%- title %>
+    </title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="/">
+            <%- title %>
+        </a>
+        <!-- Links -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Clothing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ties</a>
+            </li>
+
+            <form class="form-inline ml-sm-1 my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </ul>
+
+    </nav>
+    <%- content %>
+</body>
+
+</html>

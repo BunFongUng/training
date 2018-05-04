@@ -1,0 +1,10 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css');
+.nav-link {
+    padding-right: .5rem !important;
+    padding-left: .5rem !important;
+}
+
+.ml-auto {
+    left: auto !important;
+    right: 0px;
+}
